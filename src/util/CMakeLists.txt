@@ -7,3 +7,5 @@ add_executable("bootable"
 	"util.c")
 
 target_link_libraries("bootable" "bootable-core" "bootable-lang")
+
+set_target_properties("bootable" PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
